@@ -1,50 +1,17 @@
 <!DOCTYPE HTML>
 <!--
-	Dimension by HTML5 UP
+	Stellar by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html lang="nl">
+<html>
 	<head>
-		<title>CovInfo.nl</title>
+		<title>Maurits Fokkens</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="icon" href="https://i.ibb.co/DDfYsDc/circle-cropped.png">
-		<meta name="description" content="Vind alle informatie die je nodig hebt over het coronavirus! Statistieken, adviezen, kaarten, en nog meer!">
-		<script data-ad-client="ca-pub-6923581090138566" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<style>
-			.container {
-  position: relative;
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
-			</style>
+		<link rel="icon" href="https://ibb.co/vXvDXnh">
 	</head>
 	<body class="is-preload">
 
@@ -52,762 +19,150 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<span class="icon fa-gem"></span>
-						</div> 
-						<div class="content">
-							<div class="inner">
-								<h1>Covid-19</h1>
-								<p>Het coronvirus verspreidt zich erg snel over de hele wereld. Vind op deze site alles wat je moet weten!</p><p><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Kijk op deze site voor de laatste coronavirus updates!" data-url="https://www.covinfo.nl" data-via="cov_nl" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>&nbsp;<a href="https://twitter.com/cov_nl?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-show-count="false">Follow @cov_nl</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#intro">Over COVID-19</a></li>
-								<li><a href="#advies">Adviezen</a></li>
-								<li><a href="#getallen">Getallen</a></li>
-								<li><a href="#kaart">Kaarten</a></li>
-								<li><a href="#over">Over mij</a></li>
-							</ul>
-						</nav>
+					<header id="header" class="alt">
+						<span class="logo"><img src="images/logo.svg" alt="" /></span>
+						<h1>Maurits Fokkens</h1>
+						<p>Web Developer<br />
+						I make beautiful websites.</p>
 					</header>
-					<script>
-						function myFunction() {
-						  // Declare variables
-						  var input, filter, table, tr, td, i, txtValue;
-						  input = document.getElementById("myInput");
-						  filter = input.value.toUpperCase();
-						  table = document.getElementById("myTable");
-						  tr = table.getElementsByTagName("tr");
-						
-						  // Loop through all table rows, and hide those who don't match the search query
-						  for (i = 0; i < tr.length; i++) {
-							td = tr[i].getElementsByTagName("td")[0];
-							if (td) {
-							  txtValue = td.textContent || td.innerText;
-							  if (txtValue.toUpperCase().indexOf(filter) > -1) {
-								tr[i].style.display = "";
-							  } else {
-								tr[i].style.display = "none";
-							  }
-							}
-						  }
-						}
-						</script>
-					<script>
-						var countDownDate = new Date("Mar 18, 2020 14:05:00").getTime();
-					var x = setInterval(function() {
-						var now = new Date().getTime();
-						var distance = countDownDate - now;
-						var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-						var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-						document.getElementById("countdown").innerHTML = +hours + " uur " + minutes + " minuten en " + seconds + " seconden ";
-						if (distance < 0) {
-							clearInterval(x);
-							document.getElementById("countdown").innerHTML = "een paar minuten";
-						}
-					}, 1000); </script>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#about" class="active">About Me</a></li>
+							<li><a href="#portfolio">Portfolio</a></li>
+							<li><a href="#pricing">Pricing</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
 
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Over COVID-19</h2>
-								<p><h5>Andere namen: Coronavirus / SARS-CoV-2 / 2019-nCov / 2019 Novel Coronavirus</h5></p>
-								<span class="image main"><img src="images/covid_close.jpg" alt="Covid-19 Microscope Close-up" /></span>
-								<p>Je zal misschien wel denken, wat is dit virus? Moet ik hier bezorgd over zijn? Dat gaan we even allemaal uitleggen!</p>
-								<p>COVID-19 is de officiële naam voor dit nieuwe coronavirus. Het is allemaal begonnen in China in Wuhan, nadat er op een markt een vleermuizensoep was gemaakt met dit virus. Al snel werd het bekend dat dit virus overdraagbaar was via de lucht, en daardoor snel kon verspreiden.</p>
-								<p>Ook al verspreid dit virus zich toch zo snel, als je niet in de risicogroep zit hoef je je weinig zorgen te maken op overlijden. Het is een stevige griep zullen we maar zeggen. Er zijn over de hele wereld vooral oudere mensen overleden die een slechter immuunsysteem hadden. Het is zeker gevaarlijk, maar voor mensen buiten de risicogroep zal het minder gevaarlijk zijn.</p>
-								<p>Wees gerust - je hoeft ook niet te hamsteren - en zeker niet zo veel toiletpapier te kopen. Daar is nog geen reden voor aangezien er nog maar 0,08% in Nederland besmet is met het virus, waarvan 90% het gewoon ook weer overleefd. Zit je wel in de risicogroep? Pas dan op met naar buiten gaan, laat iemand anders boodschappen voor je doen, en houd je stevig aan <a href="#advies">de adviezen</a></p>
-							</article>
-
-						<!-- Advies -->
-							<article id="advies">
-								<h2 class="major">Adviezen</h2>
-								<p>Het <a href="https://www.rivm.nl/coronavirus/covid-19">RIVM</a> noemt een paar adviezen die je zullen helpen met het voorkomen van het krijgen van COVID-19.</p>
-								<p>
-									<ul>
-										<li><strong>Handen Wassen.</strong> Was je handen vaak en goed. Doe dit met zeep, niet alleen met water en voor minimaal 30 seconden.</li>
-										<li><strong>Hoest en nies in je elleboogholte.</strong> Als je aan de binnenkant van je elleboog hoest en niest, is er een kleinere kans dat je andere mensen kan besmetten. Want zelfs voor dat je het zelf weet en/of symptomen hebt kan je het al overbrengen!</li>
-										<li><strong>Gebruik papieren zakdoekjes</strong></li>
-										<li><strong>Schud geen handen.</strong> Alternatieven: geef een kort knikje of zwaai naar elkaar. Je kan van alles verzinnen, als je elkaar maar niet met de handen aanraakt!</li>
-										<li><strong>Blijf thuis als je verkoudheidsklachten krijgt.</strong> Hoesten en niezen zijn een symptomen van het coronavirus, dus als je verkouden bent (ook al is het alleen maar dat), blijf thuis.</li>
-									</ul>
-								</p>
-								<p>Wij hebben zelf ook nog een twee adviezen:
-									<ul>
-										<li><strong>Blijf thuis als het niet nodig is om naar buiten te gaan.</strong> Ga alleen maar naar buiten als het echt nodig is, bijvoorbeeld voor boodschappen of de hond uitlaten. en, als je dit doet, kijk dan nog steeds uit en houdt je aan de adviezen van het RIVM hierboven!</li>
-										<li><strong>Houd contact met familie, geliefden en vrienden.</strong> Dit is een moeilijk tijd, en je kan elkaar er mee helpen.</li>
-									</ul>
-								</p>
-							</article>
-
-						<!-- Getallen -->
-							<article id="getallen">
-								<h2 class="major">Getallen</h2>
-								<h3><em>In Nederland</em><br><span class="count">1705</span> positieve tests<br>43 mensen overleden<br>2 mensen genezen<br><br><em>Over de hele wereld</em><br>190,124 positieve tests<br>7,516 mensen overleden<br>80,634 mensen genezen</h3>
-								<h5>Kijk op <a href="#kaart">de kaart</a> voor meer informatie</h5>
-								<p>Laatst geüpdate: Maandag 17 maart 2020 14:00. <br>Verwachtte volgende update over <span id="countdown">aan het laden...</span></p>
-								<p><h3>Wereldwijde statistieken</h3></p>
-								<p><h6>Klik op een plaatje of ga met je muis over een plaatje om de statistieken te zien.</h6></p>
-								<div class="container"><img src="flags/china.jpg" alt="China" class="image"><div class="overlay"><div class="text"><center><br><br><h3>1 - China</h3><h5>81,051 positieve tests<br>3,230 mensen overleden<br>68,777 mensen genezen</h5></center></div></div></div>
-								<div class="container"><img src="flags/italy.jpg" alt="Italy" class="image"><div class="overlay"><div class="text"><center><br><br><h3>2 - Italy</h3><h5>27,980 positieve tests<br>2,158 mensen overleden<br>2,749 mensen genezen</h5></center></div></div></div>
-								<div class="container"><img src="flags/iran.jpg" alt="Iran" class="image"><div class="overlay"><div class="text"><center><br><br><h3>3 - Iran</h3><h5>16,169 positieve tests<br>988 mensen overleden<br>5,389 mensen genezen</h5></center></div></div></div>
-								<div class="container"><img src="flags/spanje.jpg" alt="Spanje" class="image"><div class="overlay"><div class="text"><center><br><br><h3>4 - Spanje</h3><h5>11,309 positieve tests<br>509 mensen overleden<br>1,028 mensen genezen</h5></center></div></div></div>
-								<div class="container"><img src="flags/duitsland.jpg" alt="Duitsland" class="image"><div class="overlay"><div class="text"><center><br><br><h3>5 - Duitsland</h3><h5>78.604 positieve tests<br>23 mensen overleden<br>67 mensen genezen</h5></center></div></div></div>
-								<div class="container"><img src="flags/zuid_korea.jpg" alt="Zuid Korea" class="image"><div class="overlay"><div class="text"><center><br><br><h3>6 - Zuid Korea</h3><h5>8,320 positieve tests<br>81 mensen overleden<br>1,407 mensen genezen</h5></center></div></div></div>
-								<div class="container"><img src="flags/frankrijk.jpg" alt="Frankrijk" class="image"><div class="overlay"><div class="text"><center><br><br><h3>7 - Frankrijk</h3><h5>6,664 positieve tests<br>148 mensen overleden<br>12 mensen genezen</h5></center></div></div></div>
-								<div class="container"><img src="flags/vs.jpg" alt="Verenigde Staten" class="image"><div class="overlay"><div class="text"><center><h3><br><br>8 - Verenigde Staten</h3><h5>5,204 positieve tests<br>92 mensen overleden<br>17 mensen genezen</h5></center></div></div></div>
-								<div class="container"><img src="flags/zwitserland.jpg" alt="Zwitserland" class="image"><div class="overlay"><div class="text"><center><br><br><h3>9 - Zwitserland</h3><h5>2,700 positieve tests<br>27 mensen overleden<br>4 mensen genezen</h5></center></div></div></div>
-								<div class="container"><img src="flags/gb.jpg" alt="Groot Britannië" class="image"><div class="overlay"><div class="text"><center><br><h3>10 - Groot Britannië</h3><h5>1,960 positieve tests<br>56 mensen overleden<br>53 mensen genezen</h5></center></div></div></div>
-								<br><br>
-								
-								<div class="table-wrapper">
-									<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Zoek voor landen..."><br>
-									<p>Deze getallen worden elke dag tussen 14:00 en 15:00 geüpdatet.</p>
-									<center>
-									<table id="myTable">
-										<thead>
-											<tr>
-												<th>Land</th>
-												<th>Positieve Tests</th>
-												<th>Overleden</th>
-												<th>Genezen</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>11 - Nederland</td>
-												<td>1705</td>
-												<td>43</td>
-												<td>2</td>
-											</tr>
-											<tr>
-												<td>12 - Noorwegen</td>
-												<td>1443</td>
-												<td>3</td>
-												<td>1</td>
-											</tr>
-											<tr>
-												<td>13 - Oostenrijk</td>
-												<td>1332</td>
-												<td>3</td>
-												<td>1</td>
-											</tr>
-											<tr>
-												<td>14 - België</td>
-												<td>1243</td>
-												<td>10</td>
-												<td>1</td>
-											</tr>
-											<tr>
-												<td>15 - Zweden</td>
-												<td>1190</td>
-												<td>7</td>
-												<td>1</td>
-											</tr>
-											
-											<tr>
-												<td>16 - Denemarken</td>
-												<td>1024</td>
-												<td>4</td>
-												<td>1</td>
-											</tr>
-											<tr>
-												<td>17 - Japan</td>
-												<td>878</td>
-												<td>29</td>
-												<td>139</td>
-											</tr>
-											<tr>
-												<td>18 - Cruise Schip</td>
-												<td>696</td>
-												<td>7</td>
-												<td>325</td>
-											</tr>
-											<tr>
-												<td>19 - Maleisië</td>
-												<td>673</td>
-												<td>2</td>
-												<td>49</td>
-											</tr>
-											<tr>
-												<td>20 - Australië</td>
-												<td>452</td>
-												<td>5</td>
-												<td>23</td>
-											</tr>
-											<tr>
-												<td>21 - Portugal</td>
-												<td>448</td>
-												<td>1</td>
-												<td>3</td>
-											</tr>
-											<tr>
-												<td>22 - Canada</td>
-												<td>447</td>
-												<td>4</td>
-												<td>9</td>
-											</tr>
-											<tr>
-												<td>23 - Qatar</td>
-												<td>439</td>
-												<td>0</td>
-												<td>4</td>
-											</tr>
-											<tr>
-												<td>24 - Tsjechië</td>
-												<td>396</td>
-												<td>0</td>
-												<td>3</td>
-											</tr>
-											<tr>
-												<td>25 - Griekenland</td>
-												<td>387</td>
-												<td>5</td>
-												<td>8</td>
-											</tr>
-											<tr>
-												<td>26 - Israel</td>
-												<td>324</td>
-												<td>0</td>
-												<td>11</td>
-											</tr>
-											<tr>
-												<td>27 - Finland</td>
-												<td>321</td>
-												<td>0</td>
-												<td>10</td>
-											</tr>
-											<tr>
-												<td>28 - Brazilië</td>
-												<td>321</td>
-												<td>1</td>
-												<td>2</td>
-											</tr>
-											<tr>
-												<td>29 - Slovenië</td>
-												<td>273</td>
-												<td>1</td>
-												<td>0</td>
-											</tr>
-											<tr>
-												<td>30 - Singapore</td>
-												<td>266</td>
-												<td>0</td>
-												<td>114</td>
-											</tr>
-											<tr>
-												<td>31 - Pakistan</td>
-												<td>236</td>
-												<td>0</td>
-												<td>2</td>
-											</tr>
-											<tr>
-												<td>32 - Bahrein</td>
-												<td>228</td>
-												<td>1</td>
-												<td>81</td>
-											</tr>
-											<tr>
-												<td>33 - Estland</td>
-												<td>225</td>
-												<td>0</td>
-												<td>1</td>
-											</tr>
-											<tr>
-												<td>34 - Ierland</td>
-												<td>223</td>
-												<td>2</td>
-												<td>5</td>
-											</tr>
-											<tr>
-												<td>35 - Polen</td>
-												<td>221</td>
-												<td>5</td>
-												<td>13</td>
-											</tr>
-											<tr>
-												<td>36 - IJsland</td>
-												<td>220</td>
-												<td>1</td>
-												<td>0</td>
-											</tr>
-											<tr>
-												<td>37 - Chili</td>
-												<td>201</td>
-												<td>0</td>
-												<td>0</td>
-											</tr>
-											<tr>
-												<td>38 - Filipijnen</td>
-												<td>187</td>
-												<td>12</td>
-												<td>5</td>
-											</tr>
-											<tr>
-												<td>39 - Roemenië</td>
-												<td>184</td>
-												<td>0</td>
-												<td>16</td>
-											</tr>
-											<tr>
-												<td>40 - Thailand</td>
-												<td>177</td>
-												<td>1</td>
-												<td>41</td>
-											</tr>
-											<tr>
-												<td>41 - Indonesië</td>
-												<td>172</td>
-												<td>5</td>
-												<td>8</td>
-											</tr>
-											<tr>
-												<td>42 - Egypte</td>
-												<td>166</td>
-												<td>4</td>
-												<td>32</td>
-											</tr>
-											<tr>
-												<td>43 - Irak</td>
-												<td>154</td>
-												<td>11</td>
-												<td>32</td>
-											</tr>
-											<tr>
-												<td>44 - India</td>
-												<td>142</td>
-												<td>3</td>
-												<td>14</td>
-											</tr>
-											<tr>
-												<td>45 - Luxemburg</td>
-												<td>140</td>
-												<td>1</td>
-												<td>0</td>
-											</tr>
-											<tr>
-												<td>46 - Saudi Arabië</td>
-												<td>133</td>
-												<td>0</td>
-												<td>6</td>
-											</tr>
-											<tr>
-												<td>47 - Kuweit</td>
-												<td>130</td>
-												<td>0</td>
-												<td>9</td>
-											</tr>
-											<tr>
-												<td>48 - Libanon</td>
-												<td>120</td>
-												<td>3</td>
-												<td>3</td>
-											</tr>
-											<tr>
-												<td>49 - Peru</td>
-												<td>117</td>
-												<td>0</td>
-												<td>1</td>
-											</tr>
-											<tr>
-												<td>50 - Rusland</td>
-												<td>114</td>
-												<td>0</td>
-												<td>8</td>
-											</tr>
-											<tr>
-												<td>51 - San Marino</td>
-												<td>109</td>
-												<td>7</td>
-												<td>4</td>
-											</tr>
-											<tr>
-												<td>52 - VAE/UAE</td>
-												<td>98</td>
-												<td>0</td>
-												<td>23</td>
-											</tr>
-											<tr>
-												<td>53 - Mexico</td>
-												<td>82</td>
-												<td>0</td>
-												<td>4</td>
-											</tr>
-											<tr>
-												<td>54 - Taiwan</td>
-												<td>77</td>
-												<td>1</td>
-												<td>22</td>
-											</tr>
-											<tr>
-												<td>55 - Slowakije</td>
-												<td>72</td>
-												<td>0</td>
-												<td>0</td>
-											</tr>
-											<tr>
-												<td>Armenië</td>
-												<td>56 - 72</td>
-												<td>0</td>
-												<td>1</td>
-											</tr>
-											<tr>
-												<td>Panama</td>
-												<td>57 - 69</td>
-												<td>1</td>
-												<td>0</td>
-											</tr>
-											<tr>
-												<td>Argentinië</td>
-												<td>58 - 68</td>
-												<td>2</td>
-												<td>3</td>
-											</tr>
-											<tr>
-												<td>Bulgarije</td>
-												<td>59 - 67</td>
-												<td>2</td>
-												<td>0</td>
-											</tr>
-											<tr>
-												<td>Vietnam</td>
-												<td>60 - 66</td>
-												<td>0</td>
-												<td>16</td>
-											</tr>
-											<tr>
-												<td>Colombia</td>
-												<td>61 - 65</td>
-												<td>0</td>
-												<td>1</td>
-											</tr>
-											<tr>
-												<td>Servië</td>
-												<td>62 - 65</td>
-												<td>0</td>
-												<td>1</td>
-											</tr>
-											<tr>
-												<td>Kroatië</td>
-												<td>63 - 65</td>
-												<td>0</td>
-												<td>4</td>
-											</tr>
-											<tr>
-												<td>Zuid Afrika</td>
-												<td>64 - 62</td>
-												<td>0</td>
-												<td>0</td>
-											</tr>
-											<tr>
-												<td>Algerije</td>
-												<td>65 - 60</td>
-												<td>4</td>
-												<td>12</td>
-											</tr>
-											<tr>
-												<td>Ecuador</td>
-												<td>66 - 58</td>
-												<td>2</td>
-												<td>0</td>
-											</tr>
-											<tr>
-												<td>Brunei</td>
-												<td>67 - 56</td>
-												<td>0</td>
-												<td>0</td>
-											</tr>
-											<tr>
-												<td>Albanië</td>
-												<td>68 - 55</td>
-												<td>1</td>
-												<td>0</td>
-											</tr>
-											<tr>
-												<td>Hongarije</td>
-												<td>69 - 50</td>
-												<td>1</td>
-												<td>2</td>
-											</tr>
-										</tbody>
-									</table></center>
+						<!-- Introduction -->
+							<section id="about" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>About me</h2>
+										</header>
+										<p>Hi. I am Maurits Fokkens. <br>I am just some young web developer who likes to make websites when he's home instead of at school because of the coronavirus. I am 15 years old, and you must think - I don't want a 15 year old building my website! Well, I totally understand.<br>But, it might not be so bad choosing for me instead of a grown up. Why, you ask? Well, click on the button and I'll tell you!</p>
+										<ul class="actions">
+											<li><a href="why-me.html" class="button">Why you should choose me</a></li>
+										</ul>
+									</div>
+									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
 								</div>
-							</article>
+							</section>
 
-						<!-- Kaart -->
-							<article id="kaart">
-								<h2 class="major">Kaart</h2>
-								<p><a href="https://www.rivm.nl/coronavirus-kaart-van-nederland" target="_blank">Klik hier</a> om te checken hoeveel positieve tests er in jouw gemeente zijn!<br><br><a href="global-kaart.html" target="_blank">Klik hier</a> om te checken hoe de besmettingen verspreid zijn over de wereld. <br><br>Niet genoeg? <a href="mailto:mauritsfokkens@gmail.com" target="_blank">Stuur me een mailtje!</a> Ik beantwoord je vragen en zet het misschien wel op de website!<br><br>Let op: het kan zijn dat de kaarten niet up-to-date zijn, Dit zijn kaarten van externe websites, niet van CovInfo.nl</p>
-							</article>
+						<!-- First Section -->
+							<section id="portfolio" class="main special">
+								<header class="major">
+									<h2>Portfolio</h2>
+								</header>
+								<ul class="features">
+									<li>
+										<h2><a href="https://www.covinfo.nl">CovInfo.nl</a></h2>
+										<p><a href="https://www.covinfo.nl">CovInfo.nl</a> is my most recent project. It's in Dutch, because, well, I am Dutch. The website displays the latest information about COVID-19, and shows statistics.</p>
+									</li>
+									<li>
+										<h2><a href="https://www.mauritsfokkens.xyz">MauritsFokkens.xyz</a></h2>
+										<p>Of course, I made this website myself. I guess it should be in my portfolio too, as I did make it.</p>
+									</li>
+									<li>
+										<h2><a href="https://www.instaclout.xyz">InstaClout.xyz</a></h2>
+										<p>This was the first website I ever made. Don't worry - I made this website for someone else, I don't own this and I do not take any responsibility for the website.</p>
+									</li>
+								</ul>
+							</section>
 
-						<!-- Over -->
-							<article id="over">
-								<h2 class="major">Over mij</h2>
-								<p>Hoi! Ik zie dat je wat meer wilt weten over mij. Ik ben <strong>Maurits</strong>, ik ben <b>15</b> jaar oud en volg deze pandemie al een tijdje. <br><br>Ik vind het maken van websites ook leuk, en aangezien andere websites erg onoverzichtelijk zijn wilde ik een beter website maken! <br><br>Als je me wilt helpen stel ik dat erg op prijs, je kan doneren via <a href="https://paypal.me/covinfo">PayPal</a> of via <a href="https://tikkie.me/pay/jqm017pq2q14a88bri20">Tikkie</a>. <br><br>Heb je een website nodig? Ik kan het maken! <a href="mailto:mauritsfokkens@gmail.com" target="_blank">Stuur een mail</a> en ik help je graag!<br><center><a href="https://twitter.com/cov_nl?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-show-count="false">Follow @cov_nl</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br><a class="twitter-timeline" href="https://twitter.com/cov_nl?ref_src=twsrc%5Etfw">Tweets by cov_nl</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></center></p>
-							</article>
-
-						<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
-
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
-
-								<section>
-									<h3 class="major">Lists</h3>
-
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
-
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
+						<!-- Second Section -->
+							<section id="pricing" class="main special">
+								<header class="major">
+									<h2>Pricing</h2>
+									<p>Ah. The worst part of any website. We've arrived at the pricing section.<br>Well, let me make this a short paragraph!</p>
+								</header>
+								<footer class="major">
+									
 									<div class="table-wrapper">
 										<table>
 											<thead>
 												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
+													<th style="text-align: center;">Name</th>
+													<th style="text-align: center;">Description</th>
+													<th style="text-align: center;">Price</th>
 												</tr>
 											</thead>
 											<tbody>
 												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
+													<td>One-page website</td>
+													<td>A website like <a href="https://www.instaclout.xyz">this</a>. Maximum of 20 sections.</td>
+													<td>€49.99</td>
 												</tr>
 												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
+													<td>Small website</td>
+													<td>A website like mine. Maximum of 3 pages.</td>
+													<td>€79.99</td>
 												</tr>
 												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
+													<td>Normal website</td>
+													<td>A website for a business with some information to share. Maximum of 10 pages.</td>
+													<td>€139.99</td>
 												</tr>
 												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
+													<td>Big website</td>
+													<td>A big website, best for companies that have a lot of information to share. Maximum of 100 pages.</td>
+													<td>€199.99</td>
 												</tr>
 											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
 										</table>
+										<p>All prices are excluding hosting and domain names. Hosting is free for the first year.</p>
 									</div>
+								</footer>
+							</section>
 
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
+						<!-- Get Started -->
+							<section id="contact" class="main special">
+								<header class="major">
+									<h2>Contact me</h2>
+									<p>Click on a button to go to the desired contact possibility!</p>
+								</header>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="mailto:support@mauritsfokkens.xyz" class="button primary" target="_blank">Send an email!</a></li>
+										<li><a href="https://twitter.com/FokkensMaurits" class="button primary" target="_blank">Hit me up on Twitter!</a></li>
 									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-
-							</article>
+								</footer>
+							</section>
 
 					</div>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Covinfo.nl. Design: <a href="https://html5up.net">HTML5 UP</a>. Deze website is gemaakt door <a href="#over">Maurits Fokkens</a></p>
+						<section>
+							<h2>All links</h2>
+							<p><a href="#about" class="active">About me</a><br><a href="#portfolio">Portfolio</a><br><a href="#pricing">Pricing</a><br><a href="#contact">Contact</a></p>
+						</section>
+						<section>
+							<h2>Contact</h2>
+							<dl class="alt">
+								<dt>Email</dt>
+								<dd><a href="mailto:support@mauritsfokkens.xyz">support@mauritsfokkens.xyz</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="https://twitter.com/FokkensMaurits" class="icon brands fa-twitter alt" target="_blank"><span class="label">Twitter</span></a></li>
+								<li><a href="https://github.com/mauritsf15" class="icon brands fa-github alt" target="_blank"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; mauritsfokkens.xyz. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
 			</div>
 
-		<!-- BG -->
-			<div id="bg"></div>
-
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
