@@ -1,1 +1,13 @@
-<!DOCTYPE html> <html>   <head>     <script src= "https://player.twitch.tv/js/embed/v1.js"></script>     <title>Twitch Embed Testing</title>   </head>   <body>     <div id="player"></div>     <script type="text/javascript">       var options = {         width: 854,         height: 480,         channel: "allkeyshop_tv",         parent: ["localhost"]       };       var player = new Twitch.Player("player", options);       player.setVolume(0.5);     </script>   </body> </html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+        <title>Twitch Embed Testing</title>
+    </head>
+    <body>
+        <div id="player"></div>
+        <script type="text/javascript">
+            var options = { width: 854, height: 480, channel: "allkeyshop_tv", parent: null };
+        </script>
+    </body>
+</html>
